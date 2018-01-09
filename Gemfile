@@ -23,7 +23,7 @@ end
 group(:development, :test) do
   gem 'json'
   gem 'lock_manager', *lock_manager_location_for(ENV['LOCK_MANAGER_LOCATION'] || '>= 0')
-  gem 'packaging', github: 'mwaggett/packaging', branch: 'ticket/master/re-9948-dont-create-aix-repo-config'
+  gem 'packaging', github: 'mwaggett/packaging', branch: 'ticket/1.0.x/re-9948-dont-create-aix-repo-config'
   gem 'rake', require: false
   gem 'rspec', '~> 3.0', require: false
   gem 'rubocop', "~> 0.52.1", require: false
