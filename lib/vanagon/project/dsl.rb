@@ -205,6 +205,7 @@ class Vanagon
       # @return version string parsed from branch name, fails if unable to find version
       def version_from_branch
         branch = Git.open(File.expand_path("..", Vanagon::Driver.configdir)).current_branch
+        puts "CHECKING BRANCH #{branch}"
         if branch =~ /(\d+(\.\d+)+)/
           return $1
         else
